@@ -35,7 +35,7 @@ const CertificateGenerator = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(`${API_URL}/certificates/generate`, formData);
+      const response = await axios.post(`${API_URL}/api/certificates/generate`, formData);
       const certificateId = response.data._id;
       
       // Trigger certificate download
