@@ -3,7 +3,7 @@
   publish = "build"
 
 [environment]
-  REACT_APP_API_URL = "https://certificate-generator-3bma.onrender.com"
+  REACT_APP_API_URL = "https://certificate-generator-3bma.onrender.com/api"
 
 [[redirects]]
   from = "/*"
