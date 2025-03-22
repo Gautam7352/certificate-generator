@@ -35,11 +35,11 @@ const CertificateGenerator = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(`${API_URL}/generate`, formData);
+      const response = await axios.post(`${API_URL}/certificates/generate`, formData);
       const certificateId = response.data._id;
       
       // Trigger certificate download
-      window.open(`${API_URL}/download/${certificateId}`, '_blank');
+      window.open(`${API_URL}/certificates/download/${certificateId}`, '_blank');
       
       setSnackbar({
         open: true,
